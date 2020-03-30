@@ -1234,6 +1234,7 @@ ul.dropdown-menu {
     background: #fff;
     border: 1px solid #ececec;
     border-bottom: unset;
+    margin-top: 10px;
 }
 .category-cate p {
     margin: 0px;
