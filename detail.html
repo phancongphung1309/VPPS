@@ -12,14 +12,14 @@
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style.responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/lightslider.css">
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 
 	<!-- js -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.js"></script>
-	<script type="text/javascript" src="js/my.js"></script>
-	<script type="text/javascript" src="js/lightslider.js"></script>    
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
 	<!-- font -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
@@ -116,7 +116,7 @@
 		<div id="mySidenav" class="sidenav" >
 			<a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
 			<p class="text-center white">Tìm kiếm</p>
-			<input type="text" name="search" class="form-control pd-2">
+			<input type="text" name="search" class="form-control pd-2" placeholder="Tìm kiếm...">
 
 			<button>Xem tất cả kết quả</button>
 		</div> 
@@ -235,15 +235,11 @@
 					</span>
 				</div>
 				<div class="col-2 col-sm-12 col-md-3 account-cart">
+					<div class="cart">
+						<a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="length-cart">1</span></a>
+					</div>
 					<div class="account">
 						<a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
-					</div>
-					<div class="cart">
-						<a href="cart.html">
-							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-							<span class="length-cart">1</span>
-						</a>
-						<span class="span-price">0.000đ</span>
 					</div>
 				</div>
 				<div class="col-12">
@@ -1222,43 +1218,16 @@
 				<div class="row">
 					<div class="col-12 col-md-6">
 						<div class="img-product-detail">
-							<ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-								<li data-thumb="images/test1.jpg">
-									<a href="#" data-src="images/test1.jpg" data-width="" class="open_modal" title="">
-										<img src="images/test1.jpg" alt="" class="" id="imageproduct" />
-									</a>
-								</li>
-								<li data-thumb="images/test2.jpg">
-									<a href="#" data-src="images/test2.jpg" data-width="" class="open_modal" title="">
-										<img src="images/test2.jpg" alt="" class="" id="imageproduct">
-									</a>
-								</li>
-								<li data-thumb="images/detail-product.png">
-									<a href="#" data-src="images/detail-product.png" data-width="" class="open_modal" title="">
-										<img src="images/detail-product.png" alt="" class="" id="imageproduct">
-									</a>
-								</li>
-								<li data-thumb="images/detail-product.png">
-									<a href="#" data-src="images/detail-product.png" data-width="" class="open_modal" title="">
-										<img src="images/detail-product.png" alt="" class="" id="imageproduct">
-									</a>
-								</li>
-								<li data-thumb="images/detail-product.png">
-									<a href="#" data-src="images/detail-product.png" data-width="" class="open_modal" title="">
-										<img src="images/detail-product.png" alt="" class="" id="imageproduct">
-									</a>
-								</li>
-								<li data-thumb="images/detail-product.png">
-									<a href="#" data-src="images/detail-product.png" data-width="" class="open_modal" title="">
-										<img src="images/detail-product.png" alt="" class="" id="imageproduct">
-									</a>
-								</li>
-								<li data-thumb="images/detail-product.png">
-									<a href="#" data-src="images/detail-product.png" data-width="" class="open_modal" title="">
-										<img src="images/detail-product.png" alt="" class="" id="imageproduct">
-									</a>
-								</li>
-							</ul>
+							<div class="fotorama" data-nav="thumbs" data-transition="crossfade">
+								<img src="images/test1.jpg">
+								<img src="images/test2.jpg">
+								<img src="images/test1.jpg">
+								<img src="images/test2.jpg">
+								<img src="images/test1.jpg">
+								<img src="images/test2.jpg">
+								<img src="images/test1.jpg">
+								<img src="images/test2.jpg">
+							</div>
 						</div>
 						<div class="tab-detail tab-detail-del">
 							<ul class="nav nav-tabs" role="tablist">
@@ -1330,7 +1299,7 @@
 							</div>
 							<div class="button-buy">
 								<button type="button" class="btn btn-primary buy">MUA NGAY</button>
-								<button type="button" class="btn btn-primary add-cart"><i class="fa fa-shopping-cart"></i>MUA NGAY</button>
+								<button type="button" class="btn btn-primary add-cart"><i class="fa fa-shopping-cart"></i>THÊM VÀO GIỎ HÀNG</button>
 							</div>
 							<div class="tab-detail hide-desktop">
 								<ul class="nav nav-tabs" role="tablist">
@@ -1945,29 +1914,16 @@
 	</div>
 </footer>
 <script>
-	$('.fadeOut2').owlCarousel({
-		loop: true,
-		responsiveClass: true,
-		responsive: {
-			0: {
-				items: 1,
-				nav: true,
-				navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>']
-			},
-			600: {
-				items: 1,
-				nav: true,
-				navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>']
-			},
-			1000: {
-				items: 1,
-				nav: true,
-				navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-				loop: true
-			}
-		}
-	})
 
+	$('.fotorama').fotorama({
+		width: '98%',
+		maxwidth: '100%',
+		allowfullscreen: true,
+		nav: 'thumbs',
+		transition: 'crossfade',
+	});
+
+	// The same product
 	$('.product').owlCarousel({
 		loop: true,
 		responsiveClass: true,

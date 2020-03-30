@@ -1,18 +1,5 @@
 ﻿    $(document).ready(function() {
-    	$('#image-gallery').lightSlider({
-    		gallery:true,
-    		item:1,
-    		thumbItem:9,
-    		slideMargin: 0,
-    		speed:500,
-    		auto:false,
-    		loop:true,
-			currentPagerPosition:'left',
-    		onSliderLoad: function() {
-    			$('#image-gallery').removeClass('cS-hidden');
-    		}  
-    	});
-
+        
     	$(window).scroll(function() {
     		if ($(this).scrollTop() > 100) {
     			$('#goTop').fadeIn();
@@ -22,7 +9,7 @@
     	});
 
     	$('#openNav').click(function(){
-    		$('#mySidenav').css({"width":"100%"});
+    		$('#mySidenav').css({"width":"50%"});
     		$('#mySidenav2').css({"width":"0"});
     	});
 
@@ -31,7 +18,7 @@
     	});
 
     	$('#openNav2').click(function(){
-    		$('#mySidenav2').css({"width":"100%"});
+    		$('#mySidenav2').css({"width":"50%"});
     		$('#mySidenav').css({"width":"0"});
     	});
 
@@ -80,18 +67,18 @@
     
     if(increment){
     	increment.addEventListener('click', function() {
- 		x++;
+    		x++;
     		span.textContent = x;
     	});
     }
     if(decrement){
     	decrement.addEventListener('click', function() {
-		x--;
-    	    span.textContent = x;
-    	    if (parseInt(x) <= 0) {
-    	        span.textContent = "1";
-    	        x = 1;
-    	    }
+    		x--;
+    		span.textContent = x;
+    		if (parseInt(x) <= 0) {
+    			span.textContent = "1";
+    			x = 1;
+    		}
     	});
     }
     

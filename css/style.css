@@ -27,6 +27,9 @@ input[type='radio']:checked:after{
     visibility: visible;
     border: 5px solid #f1f1f1;
 }
+.fotorama__nav__shaft {
+    width: 100%;
+}
 .img-product .img-fluid {
     max-height: 200px;
 }
@@ -229,7 +232,7 @@ input[type='radio']:checked:after{
 
 .payment-tt a {
     transition-duration: 0.3s;
-    padding: 15px 75px;
+    padding: 15px 35px;
     background: #cb2134;
     border: 1px solid #cb2134;
     color: #fff;
@@ -263,7 +266,7 @@ input[type='radio']:checked:after{
 
 .payment-cart {
     border: 1px solid #ececec;
-    padding: 15px 0px;
+    padding: 15px 10px;
     color: #676767;
 }
 
@@ -751,7 +754,7 @@ button.btn.btn-primary.add-cart:hover {
 }
 
 .title-category-product p {
-    padding: 10px 5px;
+    margin: 10px 0px;
     text-transform: uppercase;
     font-weight: 700;
     color: #676767;
@@ -1213,12 +1216,11 @@ ul.dropdown-menu {
     display: block;
 }
 .category-list-content{
-    width: 22%;
+    width: 22.4%;
     display: none;
     position: absolute;
     z-index: 2;
     padding: 0px !important;
-    top: 23px;
 }
 .category-list-content .category-list .category-list-dropdown a:hover{
     color: #cb2134;
@@ -1867,7 +1869,7 @@ footer h3 {
 }
 #menu-mobile li a {
     font-size: 16px;
-    color: #fff;
+    color: #333;
     text-decoration: none;
 }
 #menu-mobile li
@@ -1913,7 +1915,7 @@ footer h3 {
     z-index: 9999;
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom, #949494 0, #cb2134 100%);
+    background: #fff;
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
@@ -1929,14 +1931,14 @@ footer h3 {
 }
 
 .sidenav2 a:hover {
-    color: #f1f1f1;
+    color: #333;
 }
 
 .sidenav2 .closebtn2 {
     position: absolute;
     top: 0;
     font-size: 36px;
-    color: #fff;
+    color: #333;
 }
 .sidenav2{
     display: none;
@@ -1948,7 +1950,7 @@ footer h3 {
     z-index: 9999;
     top: 0;
     right: 0;
-    background: linear-gradient(to bottom, #949494 0, #cb2134 100%);
+    background: #fff;
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
@@ -1958,13 +1960,13 @@ footer h3 {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #333;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #333;
 }
 
 .sidenav .closebtn {
@@ -1972,7 +1974,7 @@ footer h3 {
     top: 0;right: 25px;
     font-size: 36px;
     margin-left: 50px;
-    color: #fff;
+    color: #333;
 }
 .sidenav{
     display: none;
@@ -1980,32 +1982,24 @@ footer h3 {
 .open{
     display: none;
 }
-div#mySidenav input:focus{
-    border-color: unset;
-    box-shadow:unset;
-}
+
 div#mySidenav p{
-    color: #fff;
+    color: #333;
 }
 div#mySidenav input {
     height: 40px;
-    background: transparent;
-    border: transparent;
-    border-bottom: 1px solid #fff;
-    border-radius: unset;
     width: 80%;
     margin: auto;
-    color: #fff;
 }
 div#mySidenav button {
     padding: 10px;
     margin: auto;
-    width: 80%;
+    width: 60%;
     border-radius: 3px;
     border: unset;
-    background: #fff;
-    color: #333;
     margin-top: 20px;
+    background: transparent;
+    border: 1px solid #3333;
 }
 /* 5 column */
 

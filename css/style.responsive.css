@@ -96,6 +96,7 @@
             }
             .sidenav2 {
                 display: block;
+                border-right: 1px solid #ececec;
             }
             .dropdown strong.fa-caret-down {
                 display: block;
