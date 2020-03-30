@@ -1358,10 +1358,7 @@ ul.dropdown-menu {
 
 .product .owl-stage-outer .owl-stage .owl-item .content-product {
     border: 1px solid transparent;
-    margin-left: 6px;
-    margin-right: 7px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin:15px;
 }
 
 .product .owl-stage-outer .owl-stage .owl-item .content-product:hover {
